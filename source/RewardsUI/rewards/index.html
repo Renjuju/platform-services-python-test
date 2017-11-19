@@ -1,11 +1,26 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <html>
 <head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <h1>Welcome to the Rewards Dashboard</h1>
-    <div>
+<body class="container">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Rewards</h1>
+    <p class="lead">Welcome to the Rewards Dashboard</p>
+  </div>
+</div>
+    <div class>
         <h2>Reward Tiers</h2>
-        <table border="1">
+        <table class="table">
             <tr>
                 <th>Rewards Tier<th>
                 <th>Reward Points</th>
@@ -23,18 +38,24 @@
     </div>
     <div>
         <h2>Add orders</h2>
-        <form>
-            <label>Enter email address: </label><input type="text"/><br>
+        <form class="form">
+          <div class="form-group">
+            <label>Enter email address: </label>
+            <input type="text"/><br>
             <label>Enter order total: </label><input type="text"/><input type="button" value="Submit Order"/>
+          </div>
         </form>
         <hr>
     </div>
     <div>
         <h2>User Rewards</h2>
         <form>
-            <label>Email address: </label><input type="text"/><input type="button" value="Search"/>
+          <div class="form-group">
+            <label>Email address: </label>
+            <input type="text"/><input type="button" value="Search"/>
+          </div>
         </form>
-        <table border="1">
+        <table class="table">
             <thead>
             <tr>
                 <th>Email Address</th>

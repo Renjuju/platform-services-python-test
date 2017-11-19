@@ -27,7 +27,6 @@ class CustomerHandler(tornado.web.RequestHandler):
         customer.pop('_id')
         self.write(json.dumps(customer, indent = 4))
 
-
 class PurchaseHandler(tornado.web.RequestHandler):
 
     def data_received(self, chunk):
