@@ -67,6 +67,7 @@ class PurchaseHandler(tornado.web.RequestHandler):
                     next_rewards_tier = rewards[idx + 1]['tier']
                     next_reward_name = rewards[idx + 1]['rewardName']
                     next_rewards_tier_progress = round(1 - (rewards[idx + 1]['points'] - points) / 100, 2)
+                    break
             elif idx is totalRewards:
                 rewards_tier = reward['tier']
                 rewards_name = reward['rewardName']
